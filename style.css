@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "aniron";
+    src: url("./aniron/Fonts/aniron.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .navbar-brand, .nav-link {
+    font-family: aniron, sans-serif;
+    color: white !important;
+    font-size: 1.5em;
+  }
+  
+  .nav-link {
+    font-size: 1em;
+  }
+  
+  .main {
+    background-color: #EDEDED;
+  }
+  
+  .titleMyPrecious {
+    font-family: aniron, sans-serif;
+    height: 20%;
+  }
+  .titleMyPrecious:before, .titleMyPrecious:after {
+    content: "";
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0.9px 0.9px 0.9px #cc8400, inset 0.9px 0.9px 0.9px #cc8400;
+    border: 4.0909090909px solid orange;
+  }
+  
+  .titleTheOneRing {
+    font-family: aniron, sans-serif;
+    height: 20%;
+  }
+  .titleTheOneRing:before {
+    content: "";
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 3px 3px 3px #cccc00, inset 3px 3px 3px #cccc00;
+    border: 13.6363636364px solid yellow;
+  }
+  
+  .sixRing {
+    margin-right: 10px;
+  }
+  
+  .titlePleaseFindIt {
+    font-family: aniron, sans-serif;
+    height: 20%;
+  }
+  
+  .blackring:nth-of-type(1) {
+    border-radius: 50%;
+    height: 33.3333333333px;
+    width: 33.3333333333px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0.6666666667px 0.6666666667px 0.6666666667px #4d4d4d, inset 0.6666666667px 0.6666666667px 0.6666666667px #4d4d4d;
+    border: 3.0303030303px solid #666666;
+    margin-right: -13.125px;
+  }
+  
+  .blackring:nth-of-type(2) {
+    border-radius: 50%;
+    height: 41.6666666667px;
+    width: 41.6666666667px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0.8333333333px 0.8333333333px 0.8333333333px #4d4d4d, inset 0.8333333333px 0.8333333333px 0.8333333333px #4d4d4d;
+    border: 3.7878787879px solid #666666;
+    margin-right: -17.5px;
+  }
+  
+  .blackring:nth-of-type(3) {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px #4d4d4d, inset 1px 1px 1px #4d4d4d;
+    border: 4.5454545455px solid #666666;
+    margin-right: -21.875px;
+  }
+  
+  .blackring:nth-of-type(4) {
+    border-radius: 50%;
+    height: 58.3333333333px;
+    width: 58.3333333333px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1.1666666667px 1.1666666667px 1.1666666667px #4d4d4d, inset 1.1666666667px 1.1666666667px 1.1666666667px #4d4d4d;
+    border: 5.303030303px solid #666666;
+    margin-right: -26.25px;
+  }
+  
+  .blackring:nth-of-type(5) {
+    border-radius: 50%;
+    height: 66.6666666667px;
+    width: 66.6666666667px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1.3333333333px 1.3333333333px 1.3333333333px #4d4d4d, inset 1.3333333333px 1.3333333333px 1.3333333333px #4d4d4d;
+    border: 6.0606060606px solid #666666;
+    margin-right: -30.625px;
+  }
+  
+  .blackring:nth-of-type(6) {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    vertical-align: -50%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1.5px 1.5px 1.5px #4d4d4d, inset 1.5px 1.5px 1.5px #4d4d4d;
+    border: 6.8181818182px solid #666666;
+    margin-right: -35px;
+  }

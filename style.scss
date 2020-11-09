@@ -1,0 +1,80 @@
+$orangering: orange;
+$yellowring: yellow;
+$blackring: black;
+$background-color: #EDEDED;
+$space: #666666;
+$mainfont: aniron;
+
+@mixin ring($size, $color){
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+  vertical-align: -50%;
+  background-color: rgba(0,0,0,0);
+  box-shadow: $size/50 $size/50 $size/50 darken($color, 10%), inset $size/50 $size/50 $size/50 darken($color, 10%);
+  border: $size/11 solid $color;
+}
+
+@font-face {
+  font-family: "aniron";
+  src: url("./aniron/Fonts/aniron.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-brand{
+  font-family: $mainfont, sans-serif;
+  color: white !important;
+  font-size: 1.5em;
+}
+
+.nav-link {
+  @extend .navbar-brand;
+  font-size: 1em;
+}
+
+.main
+{
+  background-color: $background-color;
+}
+
+.titleMyPrecious
+{
+  font-family: $mainfont, sans-serif;
+  height: 20%;
+  &:before, &:after{
+  content: "";
+  display: block;
+  margin: 0 10px;
+  @include ring(45px, $orangering);
+  }
+}
+
+.titleTheOneRing
+{
+  font-family: $mainfont, sans-serif;
+  height: 20%;
+  &:before{
+    content: "";
+    display: block;
+    margin: 0 10px;
+    @include ring(150px, $yellowring);
+  }
+}
+
+.sixRing
+{
+  margin-right: 10px;
+}
+.titlePleaseFindIt
+{
+  font-family: $mainfont, sans-serif;
+  height: 20%;
+}
+
+@for $i from 1 through 6 {
+  .blackring:nth-of-type(#{$i}) {
+    @include ring(25px * (1+($i/3)), $space);
+    margin-right: -((25px * (1+($i/2)))*0.35);
+  }
+}
